@@ -1,0 +1,45 @@
+{
+	"name" : "CunyfirstRated",
+	"version": "1.0",
+	"manifest_version" : 2,
+
+	"icons" : {"128": "cfr128.png"},
+
+	"page_action":{
+		"default_title": "CunyfirstRated",
+		"default_popup": "popup.html"
+	},
+
+	"background": {
+    "scripts": ["bs.js"],
+    "persistent": false
+},
+
+   "content_scripts": [
+    {
+      "matches": [
+      	"https://home.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?FolderPath=PORTAL_ROOT_OBJECT.HC_SSS_STUDENT_CENTER&IsFolder=false&IgnoreParamTempl=FolderPath%2cIsFolder",
+      	"https://hrsa.cunyfirst.cuny.edu/psp/cnyhcprd/EMPLOYEE/HRMS/*",
+      	"https://hrsa.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/HRMS/*",
+		"https://home.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/HRMS/*",
+		"https://home.cunyfirst.cuny.edu/psp/cnyhcprd/EMPLOYEE/HRMS/*",
+
+      	"http://home.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?FolderPath=PORTAL_ROOT_OBJECT.HC_SSS_STUDENT_CENTER&IsFolder=false&IgnoreParamTempl=FolderPath%2cIsFolder",
+      	"http://hrsa.cunyfirst.cuny.edu/psp/cnyhcprd/EMPLOYEE/HRMS/*",
+      	"http://hrsa.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/HRMS/*",
+		"http://home.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/HRMS/*",
+		"http://home.cunyfirst.cuny.edu/psp/cnyhcprd/EMPLOYEE/HRMS/*"
+      ],
+      	"js": ["jquery.min.js", "CunyfirstRated.js"]
+    }
+],
+
+   "web_accessible_resources": ["clk.png"],
+
+	"permissions": [
+		"https://*.cunyfirst.cuny.edu/",
+		"http://*.cunyfirst.cuny.edu/",
+		"http://www.ratemyprofessors.com/*",
+		"https://www.ratemyprofessors.com/*"
+	]
+}
