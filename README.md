@@ -20,5 +20,6 @@ HR/Campus Solutions --> Self Service --> Class Search
 - Updates to the CUNYfirst website may break the extension, in which case the extension will have to be updated as well.
 
 ## Contributing:
-This now belongs to CUNY students, and their contributions are welcome!
+This now belongs to CUNY students, and their contributions are welcome!  
+Contributions can be as simple as filing a bug (use [Issues](https://github.com/sam46/CunyfirstRated/issues)), writing a test, or adding a whole new awesome feature.  
 
